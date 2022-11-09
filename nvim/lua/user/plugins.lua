@@ -23,8 +23,14 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim"
   -- An implementation of the popup API in nvim.
   use "nvim-lua/popup.nvim"
+
+  -- Themes
   -- Nord theme
   use "arcticicestudio/nord-vim"
+  use "dracula/vim"
+  use "ellisonleao/gruvbox.nvim"
+  use "projekt0n/github-nvim-theme"
+  use 'ishan9299/nvim-solarized-lua'
 
   -- completion plugins
   -- The completion plugin.

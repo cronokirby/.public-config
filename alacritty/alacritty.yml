@@ -98,8 +98,9 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     family: "BlexMono Nerd Font"
+    #family: "BlexMono Nerd Font"
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: Medium
     # Bold font face
     #bold:
     # Font family
@@ -129,7 +130,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 13.0
+  size: 12.0
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
@@ -299,7 +300,7 @@ font:
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 window:
-  opacity: 0.92
+  opacity: 0.8
   #selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
@@ -747,31 +748,137 @@ key_bindings:
   #print_events: false
   #
 # XTerm's default colors
-colors:
-  # Default colors
-  primary:
-    background: '#2E3440'
-    foreground: '#D8DEE9'
+schemes:
+  # Colors (Solarized Light)
+  solarized: &solarized
+    # Default colors
+    primary:
+      background: '0xfdf6e3'
+      foreground: '0x586e75'
 
-  # Normal colors
-  normal:
-    black: '#3B4252'
-    red: '#BF616A'
-    green: '#A3BE8C'
-    yellow: '#EBCB8B'
-    blue: '#81A1C1'
-    magenta: '#B48EAD'
-    cyan: '#88C0D0'
-    white: '#E5E9F0'
+    # Normal colors
+    normal:
+      black:   '0x073642'
+      red:     '0xdc322f'
+      green:   '0x859900'
+      yellow:  '0xb58900'
+      blue:    '0x268bd2'
+      magenta: '0xd33682'
+      cyan:    '0x2aa198'
+      white:   '0xeee8d5'
 
-  # Bright colors
-  bright:
-    black: '#4C566A'
-    red: '#BF616A'
-    green: '#A3BE8C'
-    yellow: '#EBCB8B'
-    blue: '#81A1C1'
-    magenta: '#B48EAD'
-    cyan: '#8FBCBB'
-    white: '#ECEFF4'
-theme: Nord
+    # Bright colors
+    bright:
+      black:   '0x002b36'
+      red:     '0xcb4b16'
+      green:   '0x586e75'
+      yellow:  '0x657b83'
+      blue:    '0x839496'
+      magenta: '0x6c71c4'
+      cyan:    '0x93a1a1'
+      white:   '0xfdf6e3'
+  nord: &nord
+    # Default colors
+    primary:
+      background: '#2E3440'
+      foreground: '#D8DEE9'
+
+    # Normal colors
+    normal:
+      black: '#3B4252'
+      red: '#BF616A'
+      green: '#A3BE8C'
+      yellow: '#EBCB8B'
+      blue: '#81A1C1'
+      magenta: '#B48EAD'
+      cyan: '#88C0D0'
+      white: '#E5E9F0'
+
+    # Bright colors
+    bright:
+      black: '#4C566A'
+      red: '#BF616A'
+      green: '#A3BE8C'
+      yellow: '#EBCB8B'
+      blue: '#81A1C1'
+      magenta: '#B48EAD'
+      cyan: '#8FBCBB'
+      white: '#ECEFF4'
+  gruvbox: &gruvbox
+    primary:
+      background: '0x282828'
+      foreground: '0xdfbf8e'
+
+    normal:
+      black:   '0x665c54'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xe78a4e'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xdfbf8e'
+
+    bright:
+      black:   '0x928374'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xe3a84e'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xdfbf8e'
+  dracula: &dracula
+    primary:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+      bright_foreground: '#ffffff'
+    cursor:
+      text: CellBackground
+      cursor: CellForeground
+    vi_mode_cursor:
+      text: CellBackground
+      cursor: CellForeground
+    search:
+      matches:
+        foreground: '#44475a'
+        background: '#50fa7b'
+      focused_match:
+        foreground: '#44475a'
+        background: '#ffb86c'
+    footer_bar:
+      background: '#282a36'
+      foreground: '#f8f8f2'
+    hints:
+      start:
+        foreground: '#282a36'
+        background: '#f1fa8c'
+      end:
+        foreground: '#f1fa8c'
+        background: '#282a36'
+    line_indicator:
+      foreground: None
+      background: None
+    selection:
+      text: CellForeground
+      background: '#44475a'
+    normal:
+      black: '#21222c'
+      red: '#ff5555'
+      green: '#50fa7b'
+      yellow: '#f1fa8c'
+      blue: '#bd93f9'
+      magenta: '#ff79c6'
+      cyan: '#8be9fd'
+      white: '#f8f8f2'
+    bright:
+      black: '#6272a4'
+      red: '#ff6e6e'
+      green: '#69ff94'
+      yellow: '#ffffa5'
+      blue: '#d6acff'
+      magenta: '#ff92df'
+      cyan: '#a4ffff'
+      white: '#ffffff'
+
+colors: *nord
