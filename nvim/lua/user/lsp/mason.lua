@@ -1,6 +1,7 @@
 local servers = {
-  "sumneko_lua",
+  "lua_ls",
   "jsonls",
+  "pylsp",
 }
 
 local settings = {

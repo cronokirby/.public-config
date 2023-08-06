@@ -87,6 +87,9 @@ return packer.startup(function(use)
   use 'tpope/vim-fugitive'
   use 'airblade/vim-gitgutter'
 
+  -- Transparency
+  use 'xiyaowong/transparent.nvim'
+
   if PACKER_BOOSTRAP then
     require("packer").sync()
   end

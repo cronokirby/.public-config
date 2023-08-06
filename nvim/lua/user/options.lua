@@ -19,12 +19,12 @@ local options = {
   mouse = "a",
   -- Pop up menu height.
   pumheight = 10,
+  -- indentation mode
+  autoindent = true,
   -- Don't need to see INSERT and stuff.
   showmode = false,
   -- Smart case.
   smartcase = true,
-  -- Smart indenting.
-  smartindent = true,
   -- Force all horizontal splits to be below.
   splitbelow = true,
   -- Force all vertical splits to be to the right.

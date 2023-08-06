@@ -4,7 +4,6 @@
 # In order to troubleshoot your configuration try using the following command:
 # `zellij setup --check`
 # It should show current config locations and features that are enabled.
-
 keybinds:
     unbind: true
     normal:
@@ -583,7 +582,7 @@ plugins:
 
 # Choose the path to the default shell that zellij will use for opening new panes
 # Default: $SHELL
-# default_shell: fish
+default_shell: /home/lucas/.cargo/bin/nu
 
 # Toggle between having pane frames around the panes
 # Options:
